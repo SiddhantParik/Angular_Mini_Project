@@ -1,0 +1,38 @@
+
+<body class="text-center">
+    
+    <main class="form-signin">
+       
+        <form class="Container" #login1="ngForm" (ngSubmit)="login(login1.value)"  style="align-items:flex-start;width: 400px;margin-left: 400px; margin-top: 30px;">
+            <img class="mb-4" src="./assets/Logo.png" alt="" width="200" height="57">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+            <div class="form-floating">
+                <input type="text" ngModel class="form-control" name="Username"  placeholder="name@example.com">
+                <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating mt-2">
+                <input type="text" ngModel class="form-control" name="Password"  placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="checkbox mb-3 mt-2">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" >Login</button>
+            <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+        </form>
+        
+        
+    </main>
+
+
+    
+
+
+    
+
+
+</body>

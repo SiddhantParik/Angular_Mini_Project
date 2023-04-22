@@ -1,0 +1,48 @@
+
+<html>
+   
+<body>
+<font  face="Gill Sans" size="4" >
+<div style="text-align: center;">
+    <br>
+
+ <table class="table table-bordered border-primary">
+
+
+ <thead >
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>User Name</th>
+    <th>Website</th>
+    <th>Company</th>
+    <th>Address </th>  
+</tr>
+</thead>
+
+<tbody>
+<tr *ngFor="let user of userData">
+<!-- <td>{{user.id}}</td> -->
+<td>{{user[0].name}}</td>
+<!-- <td>{{user.email}}</td>
+<td>{{user.phone}}</td>
+<td>{{user.username}}</td>
+<td>{{user.website}}</td>
+<td>{{user.company.name}},{{user.company.catchPhrase}},{{user.company.bs}}</td>
+<td>{{user.address.street}},{{user.address.suite}},{{user.address.city}},
+    {{user.address.zipcode}},lat:{{user.address.geo.lat}},lng:{{user.address.geo.lng}}</td> -->
+</tr>
+</tbody>
+
+</table>
+
+
+
+
+
+</div>
+</font>
+</body>
+</html>

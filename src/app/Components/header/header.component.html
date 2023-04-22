@@ -1,0 +1,60 @@
+
+
+
+<body class="text-center">
+ 
+    
+    
+  <main class="form-signin">
+      <form class="container-fluid" #register="ngForm" (ngSubmit)="getData(register.value)" style="align-items:flex-start;width: 400px;float: left;margin-left: 200px; margin-top: 30px;">
+        
+        <img class="mb-4" src="./assets/Logo.png" alt="" width="200" height="57">
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+          <div class="form-floating">
+              <input type="text" ngModel class="form-control" name="Username"  placeholder="name@example.com">
+              <label for="floatingInput">Username</label>
+          </div>
+          <div class="form-floating mt-2">
+              <input type="text" ngModel class="form-control" name="Password"  placeholder="Password">
+              <label for="floatingPassword">Password</label>
+          </div>
+
+          <div class="checkbox mb-3 mt-2">
+              <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+              </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" id="reg" >Register</button>
+          <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+      </form>
+      
+  </main>
+
+
+  <main class="form-signin">
+    <form class="container-fluid" #register1="ngForm" (ngSubmit)="login(register1.value)" style="width: 400px;float: right; margin-top: 30px;margin-right: 100px;">
+      
+      <img class="mb-4" src="./assets/Logo.png" alt="" width="200" height="57">
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+        <div class="form-floating">
+            <input type="text" ngModel class="form-control" name="Username"  placeholder="name@example.com">
+            <label for="floatingInput">Username</label>
+        </div>
+        <div class="form-floating mt-2">
+            <input type="text" ngModel class="form-control" name="Password"  placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+
+        <div class="checkbox mb-3 mt-2">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" id="reg" >Login</button>
+        <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
+    </form>
+    
+</main>
+</body> 

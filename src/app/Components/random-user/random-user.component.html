@@ -1,0 +1,49 @@
+<div style="width: 100%; height: 70px; background-color: rgb(31, 30, 30)">
+    <h1 style="text-align: center; color: rgb(221, 220, 220); padding-top: 18px; font-size: 25px">Random User Data</h1>
+</div>
+<div style="display: flex;">
+    <div style="width: 40%; background-color: rgb(31, 30, 30); height: 100%; border: 1px solid rgb(31, 30, 30); margin-left: 50px; margin-top: 60px" >
+        <img src={{apiData.results[0].picture.large}} alt="User photo" style="border-radius: 50%; width: 200px; height: 200px; border: 2px solid rgb(82, 81, 81); margin-left: 150px; margin-top: 20px">
+        <h1 style="color: rgb(221, 220, 220); font-size: 35px; margin-top: 20px; text-align: center;">{{apiData.results[0].name.title + ". " + apiData.results[0].name.first + " " + apiData.results[0].name.last}}</h1>
+    </div>
+    <div style="min-width: 500px; border: 1px solid rgb(31, 30, 30); padding: 30px 40px 30px 40px; margin-top: 35px; margin-left: 60px">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" style="font-size: 25px;">Data</th>
+                <th scope="col" style="font-size: 25px">Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Email: </th>
+                <td>{{apiData.results[0].email}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Date of Birth:</th>
+                <td>{{(apiData.results[0].dob.date).substring(0,10)}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Age:</th>
+                <td>{{apiData.results[0].dob.age}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Country:</th>
+                <td>{{apiData.results[0].location.country}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Mobile:</th>
+                <td>{{apiData.results[0].cell}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <button type="button" class="btn btn-dark btn-circle btn-xl" style="width: 100px;
+    height: 100px;
+    padding: 13px 18px;
+    border-radius: 60px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 220px;
+    margin-left: 40px;" (click)="nextUser()">Next</button>
+</div>
